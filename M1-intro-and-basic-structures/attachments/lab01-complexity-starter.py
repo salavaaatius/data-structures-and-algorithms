@@ -60,32 +60,55 @@ POW_CALLS = 20_000    # вызовов binary_pow на один замер: ин
 
 
 def array_sum(a: list[int]) -> int:
-    """Сумма элементов массива. Ожидаемая сложность: TODO (обосновать в отчёте)."""
-    # TODO: реализовать циклом
-    raise NotImplementedError
+    # Вычисление суммы элементов. Сложность 0(n)
+    total = 0
+
+    for number in a:
+        total += number
+    return total
 
 
 def array_max(a: list[int]) -> int:
-    """Максимум массива (массив непуст). Ожидаемая сложность: TODO."""
-    # TODO: реализовать циклом
-    raise NotImplementedError
+    # Поиск максимального элемента массива. Сложность 0(n)
+    maximum = a[0]
+
+    for i in range(1, len(a)):
+        if a[i] > maximum:
+            maximum = a[i]
+    return maximum
 
 
 def count_equal_pairs(a: list[int]) -> int:
-    """Число пар (i, j), i < j, таких что a[i] == a[j]. Ожидаемая сложность: TODO."""
-    # TODO: реализовать двойным циклом
-    raise NotImplementedError
+    # Подсчёт равных пар элементов. Сложность 0(n**2)
+    count = 0
+
+    for i in range(len(a)):
+        for j in range(i + 1, len(a)):
+            if a[i] == a[j]:
+                count += 1
+    return count
 
 
 def binary_pow(x: int, n: int, mod: int | None = None) -> int:
-    """Бинарное возведение в степень, n >= 0. Ожидаемая сложность: TODO.
+    # Бинарное возведение в степень. Сложность 0(log n)
 
-    При заданном mod все умножения выполняются по модулю (результат x**n % mod).
-    """
-    # TODO: реализовать через квадрирование; при mod применять % mod после
-    # каждого умножения
-    raise NotImplementedError
+    result = 1
+    base = x
 
+    if mod is not None:
+        result %= mod
+        base %= mod
+
+    while n > 0:
+        if n % 2 == 1:
+            result *= base
+            if mod is not None:
+                result %= mod
+        base *= base
+        if mod is not None:
+            base %= mod
+        n //= 2
+    return result
 
 # ---------------------------------------------------------------------------
 # 2. Данные варианта: поиск каталога и загрузка
@@ -169,8 +192,50 @@ def self_check() -> None:
         x, n = rng.randint(2, 50), rng.randint(0, 64)
         assert binary_pow(x, n, mod=POW_MOD) == pow(x, n, POW_MOD)
 
-    # TODO: добавить собственные проверки инвариантов и описать их в отчёте
-    # (например: count_equal_pairs на массиве из попарно различных элементов = 0).
+    # Дополнительные проверки алгоритмов
+
+    # 1. Сумма отрицательных и положительных чисел
+    assert array_sum([-5, 10, -3]) == 2
+
+    # 2. Максимум среди отрицательных чисел
+    assert array_max([-10, -2, -7]) == -2
+
+    # 3. Все элементы различны — равных пар нет
+    assert count_equal_pairs([1, 2, 3, 4]) == 0
+
+    # 4. Все элементы одинаковы — 6 равных пар
+    assert count_equal_pairs([7, 7, 7, 7]) == 6
+
+    # 5. Проверка возведения в степень по модулю
+    assert binary_pow(3, 5, mod=7) == 5
+
+    # Дополнительные граничные тесты
+    assert array_sum([-5, 10, -3]) == 2
+    assert array_max([-10, -2, -7]) == -2
+    assert array_max([7, 7, 7]) == 7
+
+    # Проверка равных пар
+    assert count_equal_pairs([1, 2, 3, 4]) == 0
+    assert count_equal_pairs([7, 7, 7, 7]) == 6
+
+    # Проверка бинарного возведения в степень
+    assert binary_pow(3, 5, mod=7) == pow(3, 5, 7)
+
+    # Сравнение подсчёта пар с независимым эталоном
+    from collections import Counter
+
+    rng_pairs = random.Random(31)
+
+    for _ in range(100):
+        a = [rng_pairs.randint(0, 5) for _ in range(20)]
+        frequencies = Counter(a)
+
+        expected = sum(
+            k * (k - 1) // 2
+            for k in frequencies.values()
+        )
+
+        assert count_equal_pairs(a) == expected
     print("self_check: OK")
 
 
