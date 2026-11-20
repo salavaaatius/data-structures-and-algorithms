@@ -1,0 +1,146 @@
+﻿distribution,algorithm,n,median_time_seconds,log_log_slope
+random_wide,merge_sort,1000,0.001511000,1.1108
+random_wide,merge_sort,3000,0.005014000,1.1108
+random_wide,merge_sort,10000,0.019517000,1.1108
+random_wide,merge_sort,30000,0.067780000,1.1108
+random_wide,merge_sort,100000,0.246023000,1.1108
+random_wide,radix_sort_lsd,1000,0.001338000,1.0406
+random_wide,radix_sort_lsd,3000,0.004218000,1.0406
+random_wide,radix_sort_lsd,10000,0.014278000,1.0406
+random_wide,radix_sort_lsd,30000,0.045657000,1.0406
+random_wide,radix_sort_lsd,100000,0.162446000,1.0406
+random_wide,heap_sort,1000,0.001362000,1.1519
+random_wide,heap_sort,3000,0.005279000,1.1519
+random_wide,heap_sort,10000,0.019702000,1.1519
+random_wide,heap_sort,30000,0.072321000,1.1519
+random_wide,heap_sort,100000,0.279385000,1.1519
+random_wide,quick_sort (ЛР 3),1000,0.001359000,1.1287
+random_wide,quick_sort (ЛР 3),3000,0.005597000,1.1287
+random_wide,quick_sort (ЛР 3),10000,0.019670000,1.1287
+random_wide,quick_sort (ЛР 3),30000,0.069759000,1.1287
+random_wide,quick_sort (ЛР 3),100000,0.256035000,1.1287
+random_wide,sorted() (эталон),1000,0.000037000,1.2735
+random_wide,sorted() (эталон),3000,0.000181000,1.2735
+random_wide,sorted() (эталон),10000,0.001023000,1.2735
+random_wide,sorted() (эталон),30000,0.003427000,1.2735
+random_wide,sorted() (эталон),100000,0.013005000,1.2735
+random_small,merge_sort,1000,0.001408000,1.1108
+random_small,merge_sort,3000,0.005323000,1.1108
+random_small,merge_sort,10000,0.021193000,1.1108
+random_small,merge_sort,30000,0.072207000,1.1108
+random_small,merge_sort,100000,0.229381000,1.1108
+random_small,counting_sort,1000,0.000101000,1.0065
+random_small,counting_sort,3000,0.000261000,1.0065
+random_small,counting_sort,10000,0.000881000,1.0065
+random_small,counting_sort,30000,0.002940000,1.0065
+random_small,counting_sort,100000,0.009870000,1.0065
+random_small,radix_sort_lsd,1000,0.000407000,1.0116
+random_small,radix_sort_lsd,3000,0.001224000,1.0116
+random_small,radix_sort_lsd,10000,0.004680000,1.0116
+random_small,radix_sort_lsd,30000,0.012925000,1.0116
+random_small,radix_sort_lsd,100000,0.042317000,1.0116
+random_small,heap_sort,1000,0.001361000,1.1205
+random_small,heap_sort,3000,0.005494000,1.1205
+random_small,heap_sort,10000,0.019055000,1.1205
+random_small,heap_sort,30000,0.066328000,1.1205
+random_small,heap_sort,100000,0.248427000,1.1205
+random_small,quick_sort (ЛР 3),1000,0.000665000,1.0254
+random_small,quick_sort (ЛР 3),3000,0.002354000,1.0254
+random_small,quick_sort (ЛР 3),10000,0.007387000,1.0254
+random_small,quick_sort (ЛР 3),30000,0.019954000,1.0254
+random_small,quick_sort (ЛР 3),100000,0.083542000,1.0254
+random_small,sorted() (эталон),1000,0.000039000,1.1611
+random_small,sorted() (эталон),3000,0.000174000,1.1611
+random_small,sorted() (эталон),10000,0.000770000,1.1611
+random_small,sorted() (эталон),30000,0.002567000,1.1611
+random_small,sorted() (эталон),100000,0.008145000,1.1611
+sorted,merge_sort,1000,0.000968000,1.0835
+sorted,merge_sort,3000,0.003549000,1.0835
+sorted,merge_sort,10000,0.012351000,1.0835
+sorted,merge_sort,30000,0.040711000,1.0835
+sorted,merge_sort,100000,0.146366000,1.0835
+sorted,counting_sort,1000,0.000166000,1.0044
+sorted,counting_sort,3000,0.000485000,1.0044
+sorted,counting_sort,10000,0.001624000,1.0044
+sorted,counting_sort,30000,0.004924000,1.0044
+sorted,counting_sort,100000,0.016894000,1.0044
+sorted,radix_sort_lsd,1000,0.000426000,1.1344
+sorted,radix_sort_lsd,3000,0.001808000,1.1344
+sorted,radix_sort_lsd,10000,0.005973000,1.1344
+sorted,radix_sort_lsd,30000,0.023712000,1.1344
+sorted,radix_sort_lsd,100000,0.080974000,1.1344
+sorted,heap_sort,1000,0.001389000,1.1355
+sorted,heap_sort,3000,0.005427000,1.1355
+sorted,heap_sort,10000,0.020769000,1.1355
+sorted,heap_sort,30000,0.070393000,1.1355
+sorted,heap_sort,100000,0.266450000,1.1355
+sorted,quick_sort (ЛР 3),1000,0.001344000,1.1256
+sorted,quick_sort (ЛР 3),3000,0.005323000,1.1256
+sorted,quick_sort (ЛР 3),10000,0.021585000,1.1256
+sorted,quick_sort (ЛР 3),30000,0.065329000,1.1256
+sorted,quick_sort (ЛР 3),100000,0.250172000,1.1256
+sorted,sorted() (эталон),1000,0.000004000,1.0014
+sorted,sorted() (эталон),3000,0.000010000,1.0014
+sorted,sorted() (эталон),10000,0.000032000,1.0014
+sorted,sorted() (эталон),30000,0.000101000,1.0014
+sorted,sorted() (эталон),100000,0.000400000,1.0014
+reversed,merge_sort,1000,0.000990000,1.0858
+reversed,merge_sort,3000,0.003503000,1.0858
+reversed,merge_sort,10000,0.012920000,1.0858
+reversed,merge_sort,30000,0.041666000,1.0858
+reversed,merge_sort,100000,0.148907000,1.0858
+reversed,counting_sort,1000,0.000177000,0.9796
+reversed,counting_sort,3000,0.000550000,0.9796
+reversed,counting_sort,10000,0.001725000,0.9796
+reversed,counting_sort,30000,0.004844000,0.9796
+reversed,counting_sort,100000,0.016765000,0.9796
+reversed,radix_sort_lsd,1000,0.000566000,1.0995
+reversed,radix_sort_lsd,3000,0.002026000,1.0995
+reversed,radix_sort_lsd,10000,0.008355000,1.0995
+reversed,radix_sort_lsd,30000,0.023219000,1.0995
+reversed,radix_sort_lsd,100000,0.093633000,1.0995
+reversed,heap_sort,1000,0.001229000,1.1478
+reversed,heap_sort,3000,0.004640000,1.1478
+reversed,heap_sort,10000,0.019016000,1.1478
+reversed,heap_sort,30000,0.063601000,1.1478
+reversed,heap_sort,100000,0.245912000,1.1478
+reversed,quick_sort (ЛР 3),1000,0.001374000,1.1219
+reversed,quick_sort (ЛР 3),3000,0.005308000,1.1219
+reversed,quick_sort (ЛР 3),10000,0.020646000,1.1219
+reversed,quick_sort (ЛР 3),30000,0.064208000,1.1219
+reversed,quick_sort (ЛР 3),100000,0.252135000,1.1219
+reversed,sorted() (эталон),1000,0.000006000,0.9766
+reversed,sorted() (эталон),3000,0.000015000,0.9766
+reversed,sorted() (эталон),10000,0.000048000,0.9766
+reversed,sorted() (эталон),30000,0.000144000,0.9766
+reversed,sorted() (эталон),100000,0.000534000,0.9766
+almost_sorted,merge_sort,1000,0.001145000,1.1200
+almost_sorted,merge_sort,3000,0.004284000,1.1200
+almost_sorted,merge_sort,10000,0.015992000,1.1200
+almost_sorted,merge_sort,30000,0.054390000,1.1200
+almost_sorted,merge_sort,100000,0.203034000,1.1200
+almost_sorted,counting_sort,1000,0.000159000,1.0107
+almost_sorted,counting_sort,3000,0.000494000,1.0107
+almost_sorted,counting_sort,10000,0.002019000,1.0107
+almost_sorted,counting_sort,30000,0.004888000,1.0107
+almost_sorted,counting_sort,100000,0.016964000,1.0107
+almost_sorted,radix_sort_lsd,1000,0.000646000,1.0620
+almost_sorted,radix_sort_lsd,3000,0.001721000,1.0620
+almost_sorted,radix_sort_lsd,10000,0.006161000,1.0620
+almost_sorted,radix_sort_lsd,30000,0.023251000,1.0620
+almost_sorted,radix_sort_lsd,100000,0.079384000,1.0620
+almost_sorted,heap_sort,1000,0.001478000,1.1307
+almost_sorted,heap_sort,3000,0.005173000,1.1307
+almost_sorted,heap_sort,10000,0.020473000,1.1307
+almost_sorted,heap_sort,30000,0.068835000,1.1307
+almost_sorted,heap_sort,100000,0.271881000,1.1307
+almost_sorted,quick_sort (ЛР 3),1000,0.001666000,1.0975
+almost_sorted,quick_sort (ЛР 3),3000,0.005029000,1.0975
+almost_sorted,quick_sort (ЛР 3),10000,0.021623000,1.0975
+almost_sorted,quick_sort (ЛР 3),30000,0.063707000,1.0975
+almost_sorted,quick_sort (ЛР 3),100000,0.258722000,1.0975
+almost_sorted,sorted() (эталон),1000,0.000014000,1.0531
+almost_sorted,sorted() (эталон),3000,0.000037000,1.0531
+almost_sorted,sorted() (эталон),10000,0.000144000,1.0531
+almost_sorted,sorted() (эталон),30000,0.000464000,1.0531
+almost_sorted,sorted() (эталон),100000,0.001693000,1.0531
